@@ -26,8 +26,9 @@ at nucleotide resolution and to utilize uncertainty of read mapping.
 
 Open the Colab notebook and upload all input files in colab environment as below
 ![image](https://user-images.githubusercontent.com/69287552/156901639-d3b3d455-39a1-47fa-a53d-3c59efb86e67.png)
-
 next run all from the menu bar as below
+
+
 ![image](https://user-images.githubusercontent.com/69287552/156901667-6448678c-98c1-411d-bca5-c07a7edceb91.png)
 
 then give the following as input:
