@@ -19,3 +19,83 @@ boundaries with high resolution. We apply our method to simulated datasets and a
 higher accuracy compared to CNVnator. Moreover, we apply our method to real data from
 which we detected known CNVs. To our knowledge, this is the first attempt to predict CNVs
 at nucleotide resolution and to utilize uncertainty of read mapping.
+
+
+
+**Running code:**
+
+Open the Colab notebook and upload all input files in colab environment as below
+![image](https://user-images.githubusercontent.com/69287552/156901639-d3b3d455-39a1-47fa-a53d-3c59efb86e67.png)
+
+next run all from the menu bar as below
+![image](https://user-images.githubusercontent.com/69287552/156901667-6448678c-98c1-411d-bca5-c07a7edceb91.png)
+
+then give the following as input:
+
+>>-e20 -B4 -idata.csv -s4 –F137655983 –L137875956 -p10
+
+ (to run CNVeM for 20 rounds of EM iteration with 4 being min lenth of min boundaries, data.csv is input file, sample size is 4, 137655983 is first and F137655983 is last snp and 10 snps)
+
+
+
+
+**Manual**(can get by passing **-h** as input)
+
+Analysis options:
+
+  ex:	Rounds of EM 
+
+  Bx:	determine best boundaries x is minimum length	
+
+  R:	use LogR Ratio for EM
+
+  G:	model genotyping error
+
+  Px:	prior 
+
+  Tx:	threshold x individuals with prob >x are called as carriers
+
+  F:	Fist SNP to be considered
+
+  L:	Last SNP to be considered
+
+  Qx:	set maximim percentage of missing data per SNP
+
+
+The Dataset:
+
+  ix:	inputfile 
+
+  sx:	Sample Size 
+
+  px:	Number of SNPs
+
+  b:	Inputfile for multiple CNV-borders
+
+  m:	Mapfile for SNPs
+
+  O:	Only one hybridization intensity is in the datafile
+
+  cx:	Number of columns with irrelevant info
+
+
+Output
+
+  S:	silent EM off
+
+  A:	Calculate distributions of hybridization intensity
+
+  h:	Help-this output
+
+
+Subsampling
+
+  ux:	number of subsampled snps  
+
+  rx:	subsampled sample size 
+
+  nx:	number of subsamples taken 
+
+  fx:	frequency of  the CNV in resampled datasets 
+
+
