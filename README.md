@@ -43,6 +43,7 @@ then give the following as input:
 
  (to run CNVeM for 20 rounds of EM iteration with 4 being min lenth of min boundaries, data.csv is input file, sample size is 4, 137655983 is first and F137655983 is last snp and 10 snps)
 
+Find the outputfile in the same folder location
 
 
 
